@@ -1,3 +1,3 @@
-kom = "Hello World"
-print(kom)
+nazvanie_peremennoy = "Znachenye"
+print(nazvanie_peremennoy)
 
