@@ -1,1 +1,1 @@
-print ('Hello Ворльд!')
+print ('Hello Во!')
