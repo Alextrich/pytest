@@ -1,1 +1,3 @@
-print ('Hello Во!')
+kom = "Hello World"
+print(kom)
+
