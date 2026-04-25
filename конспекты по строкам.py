@@ -72,3 +72,12 @@ float = float(float_price)
 print(float)
 print(type(float_price))
 print(type(float))
+
+##Канкатенация и f"-строка
+text = "Python"                       # как вывести через конконтенацию два индекса
+result = text[0] + " " + text[-1]
+print(result)
+
+text = "Макарена"                     # как вывести с рандомным дополнением текста два индекса ( символа ) через f" строку
+result = f" хочу вывести начало слова макарена и конец ( первый и последний символы):{text[0]} и {text[-1]}"
+print(result)
