@@ -1,11 +1,4 @@
-#text = "python"
-#result = text[::-1]
-#print(id(result))
-#print(id(text))
-
-price = "777 rub"           # переменная с обычной строкой где есть например цена
-int_price = price[0:3:]     # новая переменная с названием по смыслу и срезом где я извлекаю только цифры и в данном случае тут целое число (тоесть integer(int))
-int_price = int(int_price)  # срезом я убрал лишнее и оставил только цифры тип данных сократился но все равно остался строкой я меняю тип данных со str на int
-print(int_price, type(int_price))   # распечатываю и срез и тип данных новой переменной чтобы убедиться что все работает
-
-
+price = "777 rub"
+int_price = price[0:3]
+int_price = int(int_price)
+print(int_price,type(int_price))
