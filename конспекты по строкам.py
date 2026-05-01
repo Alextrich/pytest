@@ -88,6 +88,14 @@ item_name = "iphone 16 pro max"
 price = "777 $"
 result = f"Я купил {item_name} за {price}"
 print(result)
+
+item_name = "Iphone 16 PRO MAX"
+item_price = 777
+money_name = {"rub", "usd", "deu"}   # Денежные единицы вывел в множестве, если бы вывел в кортеже то строка ниже ненужна была бы
+mn = (tuple(money_name))             # Преобразовал множество в кортеж
+location = "America"
+result = f"Я купил {item_name} за {item_price} {mn[1]} в {location}"
+print(result)
 # Еще пример F строк, как будут прописываться УРЛ-ы в автотестах и как их легко менять
 stage = "https://stage1.example.com"    # к примеру это урл тестового стенда
 login_page = f"{stage}/login"           # Эндпоинт страницы логин

@@ -1,3 +1,4 @@
-response = "Iphone 16"
-result = response == "Iphon 16" # Сравнение резултьтата с нужными мне данными и вывод логического результата через оператора PRINT
-print(result)                   # В данном случае результат получим - False
+
+stage
+stage
+stageћћћћ
