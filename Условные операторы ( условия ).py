@@ -64,6 +64,14 @@ if (age > 18 and student_pass) or with_adult: # Без логических зн
     print("Проходите")
 else:
     print("Стоп")
+# Еще пример с несколькими условиями и оптимизированным кодом ( где не указываешь в условиях True так как если его нет то оно по умолчанию True )
+age = 40
+name = "Alex"
+surname = "Dimitrov"
+lastname = False
+result =  "Нормуль" if lastname else "Не он" # Тут проверка идет по логике lastname == True или False и в переменной result я не пишу
+                                             # в условии lastname == True и оно по умолчанию отрабатывает проверку на True
+print(result)
 # Еще пример с четными нечетными ( с делением и результатом )
 num = 10
 if num % 2 ==0:
@@ -80,3 +88,22 @@ result = "Четное" if num % 2 == 0 else "Нечетное"
 number = num / 2
 print(result)
 print(number)
+
+# Дополнительные примеры на много условий ( больше 3х ) код без оптимизации
+age = 44
+name = "Alex"
+surname = "Dimitrov"
+lastname = False
+if age in range(30, 45):
+    print("Точно Алекс")
+elif name == "Alex" or surname == "Dimitrov" or lastname:
+    print("Вроде он да")
+else:
+    print("Не он точно")
+# Код с несколькими условиями немного оптимизирован через переменную result ( все условия в одной строке )
+age = 44
+name = "Alex"
+surname = "Dimitrov"
+lastname = True
+result = "Он" if age in range(30, 45) and name == "Alex" and lastname else "Не он точно"
+print(result)
